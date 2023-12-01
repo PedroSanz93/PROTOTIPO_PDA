@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Meson el Barrio</string>
+
+    <string name="SeleccionaMesa">Selecciona Mesa</string>
+    <string-array name="selecciona">
+        <item>SELECCIONA MESA</item>
+        <item>Mesa 1</item>
+        <item>Mesa 2</item>
+        <item>Mesa 3</item>
+        <item>Mesa 4</item>
+        <item>Mesa 5</item>
+        <item>Mesa 6</item>
+        <item>Mesa 7</item>
+        <item>Mesa 8</item>
+    </string-array>
+
+
+    <string name="articulos">Articulos</string>
+    <string-array name="articulos">
+        <item>Patatas bravas</item>
+        <item>Cochifrito</item>
+        <item>Carrillada</item>
+        <item>Calamares fritos</item>
+        <item>Codillo</item>
+        <item>Boquerones</item>
+    </string-array>
+
+<!--    <string name="bebida">bebida</string>-->
+    <string-array name="bebida">
+        <item>Comanda_Mesa_2</item>
+        <item>Comanda_Mesa_6</item>
+        <item>Comanda_Mesa_1</item>
+        <item>Comanda_Mesa_5</item>
+        <item>Comanda_Mesa_8</item>
+        <item>Comanda_Mesa_3</item>
+        <item>Comanda_Mesa_4</item>
+        <item>Comanda_Mesa_7</item>
+    </string-array>
+</resources>
+
