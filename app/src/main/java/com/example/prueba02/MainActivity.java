@@ -1,15 +1,17 @@
 package com.example.prueba02;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Spinner;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.prueba02.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
+    private ListView listView;
     private ArrayAdapter<String> adapter;
 
     @Override
@@ -19,23 +21,40 @@ public class MainActivity extends AppCompatActivity {
 
         // SPINNER
         Spinner spinner = findViewById(R.id.spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.selecciona, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+        ArrayAdapter<CharSequence> adapterSpinner = ArrayAdapter.createFromResource(this, R.array.selecciona, android.R.layout.simple_spinner_item);
+        adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapterSpinner);
         spinner.setSelection(0);
 
-        // SCROLL
-        // Obtener el array de strings desde strings.xml
-        String[] datos = getResources().getStringArray(R.array.articulos);
-        // Enlazar RecyclerView desde el layout
-        recyclerView = findViewById(R.id.recycler_view);
-        // Configurar un LinearLayoutManager para el RecyclerView
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        // Crear un ArrayAdapter para los datos y asignarlo al RecyclerView
-        adapter = new ArrayAdapter<>(this, android.R.layout.activity_main, datos);
-        recyclerView.setAdapter(adapter); // <----------- EL FALLO ESTA AQUI
-        // LA CLASE adaptadorScroll NO SIRVE PA NA pero esta ahi pa probrar
+        // ARTICULOS
+        String[] datosArticulos = getResources().getStringArray(R.array.articulo);
+        ListView listViewArticulos = findViewById(R.id.list_view_articulos);
+        ArrayAdapter<String> adapterArticulos = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosArticulos);
+        listViewArticulos.setAdapter(adapterArticulos);
 
+        // CANTIDAD
+        String[] datosCantidad = getResources().getStringArray(R.array.cantidad);
+        ListView listViewCantidad = findViewById(R.id.list_view_cantidad);
+        ArrayAdapter<String> adapterCantidad = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosCantidad);
+        listViewCantidad.setAdapter(adapterCantidad);
 
+        // IMPORTES
+        String[] datosImporte = getResources().getStringArray(R.array.importe);
+        ListView listViewImporte = findViewById(R.id.list_view_importe);
+        ArrayAdapter<String> adapterImporte = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosImporte);
+        listViewImporte.setAdapter(adapterImporte);
 
+        // COMIDA
+        String[] datosComida = getResources().getStringArray(R.array.comida);
+        ListView listViewComida = findViewById(R.id.list_view_comida);
+        ArrayAdapter<String> adapterComida = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosComida);
+        listViewComida.setAdapter(adapterComida);
+
+        // BEBIDA
+        String[] datosBebida = getResources().getStringArray(R.array.bebida);
+        ListView listViewBebida = findViewById(R.id.list_view_bebida);
+        ArrayAdapter<String> adapterBebida = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosBebida);
+        listViewBebida.setAdapter(adapterBebida);
+
+    }
 }

@@ -7,6 +7,7 @@
     android:background="@drawable/com_01"
     tools:context=".MainActivity">
 
+    <!-- Botones -->
     <Button
         android:id="@+id/button8"
         android:layout_width="170dp"
@@ -45,6 +46,18 @@
         android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="252dp"
+        android:backgroundTint="#F8ACF5"
+        android:text="AGREGAR"
+        android:textColor="#0E0325"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button5"
@@ -72,33 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="415dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="1008dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="130dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="252dp"
-        android:backgroundTint="#F8ACF5"
-        android:text="AGREGAR"
-        android:textColor="#0E0325"
-        android:textSize="8sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <!-- Spinner -->
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="164dp"
@@ -111,53 +98,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-<!--articulos-->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="134dp"
-        android:layout_height="142dp"
+    <!-- ListViews -->
+    <ListView
+        android:id="@+id/list_view_articulos"
+        android:layout_width="131dp"
+        android:layout_height="140dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="104dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-<!--cantidad-->
-    <!--importe-->
-    <!--bebida-->
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view2"
-        android:layout_width="409dp"
-        android:layout_height="179dp"
+    <ListView
+        android:id="@+id/list_view_cantidad"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list_view_importe"
+        android:layout_width="135dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list_view_comida"
+        android:layout_width="405dp"
+        android:layout_height="215dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="508dp"
+        android:layout_marginTop="328dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view4"
-        android:layout_width="134dp"
-        android:layout_height="142dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginTop="104dp"
+    <ListView
+        android:id="@+id/list_view_bebida"
+        android:layout_width="407dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="588dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-<!--comida-->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view5"
-        android:layout_width="134dp"
-        android:layout_height="142dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="104dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="404dp"
-        android:layout_height="176dp"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="292dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

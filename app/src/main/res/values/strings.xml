@@ -13,8 +13,67 @@
         <item>Mesa 7</item>
         <item>Mesa 8</item>
     </string-array>
-
-
+    <string-array name="articulo">
+        <item>Elemento 1</item>
+        <item>Elemento 2</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+    </string-array>
+    <string-array name="cantidad">
+        <item>Elemento 1</item>
+        <item>Elemento 2</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+    </string-array>
+    <string-array name="importe">
+        <item>Elemento 1</item>
+        <item>Elemento 2</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+    </string-array>
+    <string-array name="comida">
+        <item>Elemento 1</item>
+        <item>Elemento 2</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+    </string-array>
+    <string-array name="bebida">
+        <item>Elemento 1</item>
+        <item>Elemento 2</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+        <item>Elemento 3</item>
+    </string-array>
+<!--
     <string name="articulos">Articulos</string>
     <string-array name="articulos">
         <item>Patatas bravas</item>
@@ -25,7 +84,7 @@
         <item>Boquerones</item>
     </string-array>
 
-<!--    <string name="bebida">bebida</string>-->
+&lt;!&ndash;    <string name="bebida">bebida</string>&ndash;&gt;
     <string-array name="bebida">
         <item>Comanda_Mesa_2</item>
         <item>Comanda_Mesa_6</item>
@@ -35,6 +94,6 @@
         <item>Comanda_Mesa_3</item>
         <item>Comanda_Mesa_4</item>
         <item>Comanda_Mesa_7</item>
-    </string-array>
+    </string-array>-->
 </resources>
 
