@@ -1,6 +1,8 @@
 package com.example.prueba02;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -38,11 +40,76 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapterCantidad = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosCantidad);
         listViewCantidad.setAdapter(adapterCantidad);
 
+
         // IMPORTES
         String[] datosImporte = getResources().getStringArray(R.array.importe);
         ListView listViewImporte = findViewById(R.id.list_view_importe);
         ArrayAdapter<String> adapterImporte = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosImporte);
         listViewImporte.setAdapter(adapterImporte);
+
+
+        final View[] clickSource = new View[1];
+        final View[] touchSource = {null};
+
+        int offset = 0;
+
+
+        listViewArticulos.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(touchSource[0] == null)
+                    touchSource[0] = v;
+
+                if(v == touchSource[0]) {
+                    listViewCantidad.dispatchTouchEvent(event);
+                    listViewImporte.dispatchTouchEvent(event);
+                    if(event.getAction() == MotionEvent.ACTION_UP) {
+                        clickSource[0] = v;
+                        touchSource[0] = null;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        listViewCantidad.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(touchSource[0] == null)
+                    touchSource[0] = v;
+
+                if(v == touchSource[0]) {
+                    listViewArticulos.dispatchTouchEvent(event);
+                    listViewImporte.dispatchTouchEvent(event);
+                    if(event.getAction() == MotionEvent.ACTION_UP) {
+                        clickSource[0] = v;
+                        touchSource[0] = null;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        listViewImporte.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(touchSource[0] == null)
+                    touchSource[0] = v;
+
+                if(v == touchSource[0]) {
+                    listViewCantidad.dispatchTouchEvent(event);
+                    listViewArticulos.dispatchTouchEvent(event);
+                    if(event.getAction() == MotionEvent.ACTION_UP) {
+                        clickSource[0] = v;
+                        touchSource[0] = null;
+                    }
+                }
+
+                return false;
+            }
+        });
 
         // COMIDA
         String[] datosComida = getResources().getStringArray(R.array.comida);

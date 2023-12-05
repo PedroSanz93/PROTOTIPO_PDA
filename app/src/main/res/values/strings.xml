@@ -14,40 +14,40 @@
         <item>Mesa 8</item>
     </string-array>
     <string-array name="articulo">
-        <item>Elemento 1</item>
-        <item>Elemento 2</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
+        <item>PatatasBrava</item>
+        <item>CalamaresFri</item>
+        <item>Carrillada+p</item>
+        <item>Hamburgu+Que</item>
+        <item>Cerveza Mace</item>
+        <item>Tinto  Limon</item>
+        <item>Cerveza Mace</item>
+        <item>CocaCola Rfr</item>
+        <item>AguaMineralB</item>
+        <item>Pan+palillos</item>
     </string-array>
     <string-array name="cantidad">
-        <item>Elemento 1</item>
-        <item>Elemento 2</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>4</item>
+        <item>4</item>
+        <item>3</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>3</item>
     </string-array>
     <string-array name="importe">
-        <item>Elemento 1</item>
-        <item>Elemento 2</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
+        <item>7.99</item>
+        <item>9.99</item>
+        <item>8.99</item>
+        <item>5.99</item>
+        <item>2.99</item>
+        <item>2.50</item>
+        <item>2.99</item>
+        <item>2.50</item>
+        <item>2.20</item>
+        <item>1.99</item>
     </string-array>
     <string-array name="comida">
         <item>Elemento 1</item>
@@ -73,7 +73,7 @@
         <item>Elemento 3</item>
         <item>Elemento 3</item>
     </string-array>
-<!--
+    <!--
     <string name="articulos">Articulos</string>
     <string-array name="articulos">
         <item>Patatas bravas</item>
