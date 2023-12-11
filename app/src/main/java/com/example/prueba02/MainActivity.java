@@ -1,9 +1,11 @@
 package com.example.prueba02;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 
@@ -122,6 +124,17 @@ public class MainActivity extends AppCompatActivity {
         ListView listViewBebida = findViewById(R.id.list_view_bebida);
         ArrayAdapter<String> adapterBebida = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosBebida);
         listViewBebida.setAdapter(adapterBebida);
+
+        // ACCESO A VENTANA DE COM_02
+        Button botonCobrar= (Button) findViewById(R.id.btnCobrar);
+
+        botonCobrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),COM_02.class);
+                startActivityForResult(intent,0);
+            }
+        });
 
     }
 }
