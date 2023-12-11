@@ -1,5 +1,7 @@
 package com.example.prueba02;
 
+import static java.lang.Math.round;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -26,7 +28,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"1";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
         // BOTON 2
@@ -35,7 +37,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"2";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -45,7 +47,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"3";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -55,7 +57,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"4";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -65,7 +67,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"5";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -75,7 +77,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"6";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -85,7 +87,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"7";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -95,7 +97,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"8";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -105,7 +107,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"9";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -115,7 +117,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+"0";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -125,7 +127,7 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal=cuentatotal+".";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
@@ -135,16 +137,35 @@ public class COM_02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cuentatotal="";
-                total.setText(cuentatotal);
+                total.setText(cuentatotal+"€");
             }
         });
 
-        TextView entrega = findViewById(R.id.txEntrega);
-//        BigInteger.valueOf(cuentatotal);
-        entrega.setText(cuentatotal);
 
-//        double totalComanda=86.70;
+//        BigInteger.valueOf(cuentatotal);
+
+
+        double totalComanda=87;
 //        TextView cambio = findViewById(R.id.txCambio);
 //        cambio.setText(cuentatotal-totalComanda);
+
+        TextView entrega = findViewById(R.id.txtEntrega);
+        TextView cambio = findViewById(R.id.txCambio);
+
+
+        Button botonefectivo= (Button) findViewById(R.id.btnEfectivo);
+        botonefectivo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                entrega.setText(cuentatotal+"€");
+                double cuenta = Double.parseDouble(cuentatotal);
+                double cambiofinal=(cuenta-totalComanda);
+                cambio.setText(String.valueOf(cambiofinal)+"€");
+
+            }
+        });
+
+
+
     }
 }

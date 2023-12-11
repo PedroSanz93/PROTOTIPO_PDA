@@ -276,7 +276,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btnEfectivo"
         style="@style/Widget.Material3.Button.IconButton"
         android:layout_width="203dp"
         android:layout_height="48dp"
@@ -309,7 +309,7 @@
         android:layout_height="80dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="596dp"
-        android:text=" TOTAL COMANDA: 86,70"
+        android:text=" TOTAL COMANDA: 87.00"
         android:textAlignment="textStart"
         android:textColor="#F8ACF5"
         android:textSize="34sp"
@@ -317,16 +317,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txEntrega"
+        android:id="@+id/txtEntrega"
         android:layout_width="202dp"
         android:layout_height="53dp"
         android:layout_marginStart="204dp"
         android:layout_marginTop="676dp"
-        android:text=" -,-€"
+        android:text="-,-€"
         android:textAlignment="center"
         android:textColor="#F8ACF5"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
