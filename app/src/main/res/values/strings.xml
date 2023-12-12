@@ -50,28 +50,28 @@
         <item>1.99</item>
     </string-array>
     <string-array name="comida">
-        <item>Elemento 1</item>
-        <item>Elemento 2</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
+        <item>Hamburguesa con Queso</item>
+        <item>Carrilladda con patatas</item>
+        <item>Patatas Brava</item>
+        <item>Calamares fritos</item>
+        <item>Solomillo Roquefort</item>
+        <item>Ensaladilla</item>
+        <item>Flamenquin Cordobés</item>
+        <item>Salmorejo Cordobés</item>
+        <item>Pinchitos presa</item>
+        <item>Ensalada Cesar</item>
     </string-array>
     <string-array name="bebida">
-        <item>Elemento 1</item>
-        <item>Elemento 2</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
-        <item>Elemento 3</item>
+        <item>Cerveza maceta</item>
+        <item>Cerveza jarra</item>
+        <item>Cerveza tubo</item>
+        <item>Cerveza caña</item>
+        <item>Tinto limon</item>
+        <item>Tinto casera</item>
+        <item>CocaCola</item>
+        <item>PepsiCola</item>
+        <item>Fanta Naranja</item>
+        <item>Fanta Limon</item>
     </string-array>
     <!--
     <string name="articulos">Articulos</string>
