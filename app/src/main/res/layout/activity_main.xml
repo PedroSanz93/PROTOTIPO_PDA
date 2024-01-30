@@ -17,7 +17,7 @@
         android:backgroundTint="#F8ACF5"
         android:text="TICKET"
         android:textColor="#0E0325"
-        android:textSize="8sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
         android:backgroundTint="#F8ACF5"
         android:text="COBRAR"
         android:textColor="#0E0325"
-        android:textSize="8sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,62 +43,70 @@
         android:backgroundTint="#F8ACF5"
         android:text="ASIGNAR COMANDA"
         android:textColor="#0E0325"
-        android:textSize="8sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/button"
-        android:layout_width="130dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="252dp"
-        android:backgroundTint="#F8ACF5"
-        android:text="AGREGAR"
-        android:textColor="#0E0325"
-        android:textSize="8sp"
+        android:textSize="10.5sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
         android:layout_width="130dp"
         android:layout_height="29dp"
-        android:layout_marginStart="276dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="252dp"
-        android:backgroundTint="#F8ACF5"
-        android:text="EDITAR"
-        android:textColor="#0E0325"
+        android:backgroundTint="#0E0325"
+        android:text="AGREGAR"
+        android:textColor="#F8ACF5"
         android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#F8ACF5"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="252dp"
+        android:backgroundTint="#0E0325"
+        android:text="BORRAR"
+        android:textColor="#F8ACF5"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#F8ACF5"
+        app:strokeWidth="2dp" />
+
+    <!-- Spinner -->
+
+    <!-- ListViews -->
 
     <Button
         android:id="@+id/button4"
         android:layout_width="130dp"
         android:layout_height="29dp"
-        android:layout_marginStart="140dp"
+        android:layout_marginStart="276dp"
         android:layout_marginTop="252dp"
-        android:backgroundTint="#F8ACF5"
-        android:text="BORRAR"
-        android:textColor="#0E0325"
+        android:backgroundTint="#0E0325"
+        android:text="EDITAR"
+        android:textColor="#F8ACF5"
         android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#F8ACF5"
+        app:strokeWidth="2dp" />
 
-    <!-- Spinner -->
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="164dp"
         android:layout_height="23dp"
         android:layout_marginStart="240dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="36dp"
         android:background="#0E0325"
         android:backgroundTint="#F7ABF4"
         android:textColor="#0E0325"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- ListViews -->
     <ListView
         android:id="@+id/list_view_articulos"
         android:layout_width="131dp"
